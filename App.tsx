@@ -61,7 +61,7 @@ const CategoryScreen = ({ category, onNavigateBack }: { category: ScreenType; on
   useEffect(() => {
     const fetchItems = async () => {
       try {
-        const response = await axios.get(`http://192.168.17.3:3000/${category.toLowerCase()}`);
+        const response = await axios.get(`http://X.X.X.X:3000/${category.toLowerCase()}`);
         setItems(response.data);
         setFilteredItems(response.data);
         setLoading(false);
